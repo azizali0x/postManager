@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"rest-client.environmentVariables": {
+			"dev":{
+				"host":"http://localhost:8080/",
+				"apiUrl":"http://localhost:8080/api",
+				"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RfdGVzdEBtYWlsLm9yZyIsImlhdCI6MTY3MjMxMTY3NSwiZXhwIjoxNjcyMzU0ODc1fQ.PP5-7zItyIbQ28g2JIApoHyZEqcjYMTLU8IYT2w4vUk",
+				"token_2":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlAbWFpbC5vcmciLCJpYXQiOjE2NzIzMDc2OTcsImV4cCI6MTY3MjM1MDg5N30.DpPQPEaQrHmnwA5AWGLRgOsTr6NuG_7QYh8gAvKBp84",
+			}
+		}
+	},
+
+}

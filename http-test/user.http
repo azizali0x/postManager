@@ -1,0 +1,40 @@
+### CREATE USER
+POST {{apiUrl}}/user/signup
+Content-Type: application/json
+
+{
+    "name":"Abdul Aziz",
+    "email": "test@mail.org",
+    "password": "123433"
+}
+
+### LOGIN 
+
+POST  {{apiUrl}}/user/login
+Content-Type: application/json
+
+{
+    "email": "test_test@mail.org",
+    "password": "123433"
+}
+
+
+### GET USER
+GET {{apiUrl}}/user/63ad71eff03d5972c241a9ce
+Content-Type: application/json
+Authorization: {{token}}
+
+
+### DELETE USER
+DELETE {{apiUrl}}/user/63ad71eff03d5972c241a9ce
+Content-Type: application/json
+Authorization: {{token}}
+
+### UPDATE USER 
+PATCH {{apiUrl}}/user/63ad71eff03d5972c241a9ce
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+    "email":"test_test@mail.org"
+}

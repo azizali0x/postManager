@@ -1,0 +1,102 @@
+### create post public 
+POST {{apiUrl}}/post
+Content-Type: application/json
+
+{
+    "content":"test9jkdjdj",
+    "title":"private is test 222"
+}
+
+
+### create post private
+### auth is required for private posts
+POST {{apiUrl}}/post
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+    "content":"test9jkdjdj",
+    "title":"private is test 222"
+}
+
+### GET all post public
+
+GET {{apiUrl}}/post
+Content-Type: application/json
+
+{
+
+}
+
+### GET all private post
+### Auth is required
+
+GET {{apiUrl}}/post
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+
+}
+
+
+### GET post public
+GET {{apiUrl}}/post/63ae80f810c24f2597f4ce70
+Content-Type: application/json
+
+{
+
+}
+
+
+### GET a private post 
+### Auth is required
+GET {{apiUrl}}/post/63ae80f810c24f2597f4ce70
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+
+}
+
+
+### UPDATE a public post
+PATCH {{apiUrl}}/post/63ad74aeb0dc262b4a7bd3d6
+Content-Type: application/json
+
+{
+    "title": "changed",
+    "content": "changed"
+}
+
+### UPDATE a private post 
+### Auth is required
+PATCH {{apiUrl}}/post/63ad74aeb0dc262b4a7bd3d6
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+    "title": "changed",
+    "content": "changed"
+}
+
+### DELETE post public
+DELETE {{apiUrl}}/post/63ad74aeb0dc262b4a7bd3d6
+Content-Type: application/json
+
+{
+
+}
+
+### DELETE a private post
+### Auth is required
+DELETE {{apiUrl}}/post/63ad74aeb0dc262b4a7bd3d6
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+
+}
+
+
+### Add comment to post

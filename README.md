@@ -22,17 +22,20 @@ CREATE A POST ` POST => /api/posts`
 "content": "content of post" 
 }
 ```
+
 NB: Login and use `Authorization: token` if you want post to be private
 
 ***
 
 GET ALL POSTS `GET => /api/posts`
+
 NB: Login and use `Authorization: token` if you want to get private post for user
 
 
 ***
 
 GET A POST `GET => /api/posts/:id`
+
 NB: Login and use `Authorization: token` if post is private
 
 ***
@@ -46,6 +49,7 @@ UPDATE A POST `PATCH => /api/posts/:id`
 "content": "content to be changed",
 }
 ```
+
 NB: Login and use `Authorization: token` if you post is private
 
 ***
